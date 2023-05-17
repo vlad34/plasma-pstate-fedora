@@ -54,16 +54,17 @@ the code and install it using the following commands:
 
 ```
 git clone https://github.com/frankenfruity/plasma-pstate
+sudo dnf install cmake extra-cmake-modules kf5-plasma-devel kf5-ki18n kf5-ki18n-devel qt5-qtquickcontrols2-devel qt5-qtquickcontrols2
 cd plasma-pstate
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_BUILD_TYPE=Release ..
 make
-make install
+sudo make install
 
 cd ..
-cp ./src/plasma_pstate.policy /usr/share/polkit-1/actions/
-chmod 644 /usr/share/polkit-1/actions/plasma_pstate.policy
+sudo cp ./src/plasma_pstate.policy /usr/share/polkit-1/actions/
+sudo chmod 644 /usr/share/polkit-1/actions/plasma_pstate.policy
 ```
 
 **Notice:** If your processor doesn't support EPP(ie older generations without 
