@@ -73,7 +73,7 @@ case of Ubuntu 18.04 distros) is provided by the ``linux-tools`` package and
 can be installed using the following command
 
 ```
-sudo apt install linux-tools-generic linux-tools-`uname -r`
+sudo dnf install kernel-tools kernel-tools-`uname -r`
 ```
 
 ## Custom profiles
