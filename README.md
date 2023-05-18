@@ -53,8 +53,8 @@ First of all you need to be in sudoers' group. After that you can just clone
 the code and install it using the following commands:
 
 ```
+sudo dnf install git-core make cmake extra-cmake-modules kf5-plasma-devel kf5-ki18n kf5-ki18n-devel qt5-qtquickcontrols2-devel qt5-qtquickcontrols2
 git clone https://github.com/frankenfruity/plasma-pstate
-sudo dnf install cmake extra-cmake-modules kf5-plasma-devel kf5-ki18n kf5-ki18n-devel qt5-qtquickcontrols2-devel qt5-qtquickcontrols2
 cd plasma-pstate
 mkdir build
 cd build
@@ -73,7 +73,7 @@ case of Ubuntu 18.04 distros) is provided by the ``linux-tools`` package and
 can be installed using the following command
 
 ```
-sudo dnf install kernel-tools kernel-tools-`uname -r`
+sudo dnf install kernel-tools
 ```
 
 ## Custom profiles
